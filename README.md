@@ -144,7 +144,7 @@ python run_experiments.py
 
 ---
 
-## Theory Questions (answered in Laporan_Tugas05.md)
+## Theory Questions (answered in Laporan_Tugas05.md and Bagian A.pdf)
 
 1. How BatchNorm can act as a regularizer and its limitations
 2. How residual connections help address degradation in deep networks
