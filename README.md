@@ -162,8 +162,8 @@ Full report with methodology, results, analysis, and theory answers: `Laporan_Tu
 
 ## Author
 
-**Student:** [Nama Mahasiswa]  
-**NIM:** [NIM]
+**Student:** Abraham Gregorius Anderson Thio
+**NIM:** 2802473504
 
 ---
 
