@@ -83,16 +83,6 @@ Run all cells sequentially. The notebook contains:
 3. Evaluation and visualization
 4. Report generation
 
-### Option 2: Quick Run (3 epochs, CPU-friendly)
-```bash
-python run_quick.py
-```
-
-### Option 3: Full Run (10 epochs)
-```bash
-python run_experiments.py
-```
-
 ---
 
 ## Experiment Details
