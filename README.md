@@ -75,7 +75,7 @@ Requirements:
 
 ### Option 1: Jupyter Notebook
 ```bash
-jupyter notebook Tugas05_TransferLearning.ipynb
+jupyter notebook AbrahamGregoriusAndersonThio.ipynb
 ```
 Run all cells sequentially. The notebook contains:
 1. Data loading and preprocessing
