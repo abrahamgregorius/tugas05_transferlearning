@@ -24,15 +24,15 @@ Membandingkan CNN from scratch vs transfer learning pada Oxford-IIIT Pet Dataset
 
 ## 5. Theory Questions
 
-**BatchNorm as Regularizer**: BatchNorm menormalkan aktivasi menggunakan statistik mini-batch yang menambah noise. Limitation: di inference menggunakan running statistics, tidak berlaku optimal untuk batch kecil.
+**BatchNorm as Regularizer**: BatchNorm menormalkan aktivasi menggunakan statistik dari mini-batch, dan efek sampingnya yaitu menambah noise yang berfungsi sebagai regularisasi. Kelemahannya, saat inference menggunakan running statistics yang dihitung dari seluruh data, sehingga tidak berjalan optimal untuk batch kecil.
 
-**Residual Connections**: Skip connections memungkinkan gradient flow langsung melalui jaringan, membantu mengatasi degradation di deep networks dengan memfasilitasi pembelajaran identity mappings.
+**Residual Connections**: Skip connections memungkinkan gradient mengalir langsung melewati beberapa layer sehingga masalah degradation di deep networks bisa diatasi. Selain itu, skip connections juga mempermudah jaringan dalam mempelajari identity mappings.
 
-**Feature Extraction vs Fine-tuning**: Feature extraction menggunakan backbone sebagai fixed feature extractor. Fine-tuning unfreeze beberapa layer. FE cocok untuk dataset kecil/similar, FT untuk dataset besar.
+**Feature Extraction vs Fine-tuning**: Feature extraction menggunakan backbone yang sudah dilatih di dataset lain sebagai feature extractor tetap. Fine-tuning membuka beberapa layer bagian akhir agar bisa dilatih ulang. FE lebih cocok untuk dataset kecil atau mirip dengan dataset pretrained, sedangkan FT lebih cocok untuk dataset yang besar.
 
-**Augmentation**: Hanya untuk training untuk menambah data dan regularisasi. Validation/test harus real-world untuk evaluasi unbiased. Transformasi harus preserve labels.
+**Augmentation**: Augmentation hanya dilakukan saat training untuk menambah variasi data dan sebagai regularisasi. Validation dan test menggunakan data asli tanpa augmentasi supaya evaluasi mencerminkan kondisi nyata. Transformasi yang digunakan harus tetap menjaga label asli dari data.
 
-**Catastrophic Forgetting**: Fine-tuning dapat overwrite pretrained knowledge. Mitigasi: learning rate lebih rendah untuk pretrained layers, progressive unfreezing, weight decay.
+**Catastrophic Forgetting**: Fine-tuning bisa membuat jaringan lupa pengetahuan yang sudah dipelajari dari pretrained model. Cara mengatasinya antara lain menggunakan learning rate lebih kecil untuk layer pretrained, progressive unfreezing, dan weight decay.
 
 ## 6. Conclusion
 Transfer learning mengungguli training from scratch. Fine-tuning memberikan peningkatan dibanding frozen feature extraction. Data augmentation membantu generalisasi.
