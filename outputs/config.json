@@ -1,0 +1,29 @@
+{
+  "dataset": "Oxford-IIIT Pet Dataset",
+  "selected_classes": 10,
+  "image_size": 224,
+  "batch_size": 32,
+  "split_ratios": {"train": 0.7, "val": 0.15, "test": 0.15},
+  "seed": 42,
+  "device": "cpu",
+  "augmentation": {
+    "train": ["Resize(224)", "RandomHorizontalFlip", "ToTensor", "Normalize"],
+    "val_test": ["Resize(224)", "ToTensor", "Normalize"]
+  },
+  "preprocessing": {
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "experiments": {
+    "B1": "ResNet-18 from scratch",
+    "B2": "Pretrained ResNet-18 frozen backbone",
+    "B3": "Fine-tuning layer4 and classifier",
+    "B4": "Augmentation control"
+  },
+  "library_versions": {
+    "torch": "2.14.1",
+    "torchvision": "0.29.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2"
+  }
+}

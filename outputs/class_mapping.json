@@ -1,0 +1,38 @@
+{
+  "class_to_idx": {
+    "Abyssinian": 0,
+    "Bengal": 1,
+    "Birman": 2,
+    "Bombay": 3,
+    "British Shorthair": 4,
+    "Beagle": 5,
+    "Boxer": 6,
+    "Chihuahua": 7,
+    "Pomeranian": 8,
+    "Pug": 9
+  },
+  "idx_to_class": {
+    "0": "Abyssinian",
+    "1": "Bengal",
+    "2": "Birman",
+    "3": "Bombay",
+    "4": "British Shorthair",
+    "5": "Beagle",
+    "6": "Boxer",
+    "7": "Chihuahua",
+    "8": "Pomeranian",
+    "9": "Pug"
+  },
+  "selected_classes": [
+    "Abyssinian",
+    "Bengal",
+    "Birman",
+    "Bombay",
+    "British Shorthair",
+    "Beagle",
+    "Boxer",
+    "Chihuahua",
+    "Pomeranian",
+    "Pug"
+  ]
+}

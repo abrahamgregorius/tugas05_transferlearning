@@ -1,0 +1,32 @@
+[
+  {
+    "index": 10,
+    "true": "Beagle",
+    "pred": "Boxer",
+    "confidence": 0.6182528734207153
+  },
+  {
+    "index": 16,
+    "true": "Pomeranian",
+    "pred": "Chihuahua",
+    "confidence": 0.47133609652519226
+  },
+  {
+    "index": 63,
+    "true": "Chihuahua",
+    "pred": "Abyssinian",
+    "confidence": 0.3225349485874176
+  },
+  {
+    "index": 85,
+    "true": "Boxer",
+    "pred": "Beagle",
+    "confidence": 0.5423612594604492
+  },
+  {
+    "index": 109,
+    "true": "Boxer",
+    "pred": "Pug",
+    "confidence": 0.5350261926651001
+  }
+]
